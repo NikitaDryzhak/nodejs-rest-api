@@ -7,10 +7,10 @@ async function listContacts() {
   return JSON.parse(file);
 }
 
-async function getContactById(contactId) {
+async function getContactById(id) {
   const allContacts = await listContacts();
   const result = allContacts.find((contact) => {
-    return contact.id == contactId;
+    return contact.id == id;
   });
   if (!result) {
     return null;
@@ -18,18 +18,18 @@ async function getContactById(contactId) {
   return result;
 }
 
-async function removeContact(contactId) {
+async function removeContact(id) {
   const allContacts = await listContacts();
-  const index = allContacts.findIndex(item => item.id === contactId);
+  const index = allContacts.findIndex((item) => item.id === id);
   if (index === -1) {
-    return null
+    return null;
   }
   const [result] = allContacts.splice(index, 1);
   await fs.writeFile(contactsPath, JSON.stringify(allContacts));
   return result;
 }
 
-async function addContact({name, email, phone}) {
+async function addContact({ name, email, phone }) {
   const allContacts = await listContacts();
   const newContact = { id: nanoid(2), name, email, phone };
   allContacts.push(newContact);
@@ -37,14 +37,14 @@ async function addContact({name, email, phone}) {
   return newContact;
 }
 
-async function updateContact(contactId, {name, email, phone}) {
+async function updateContact(id, { name, email, phone }) {
   const allContacts = await listContacts();
-  const index = allContacts.findIndex(item => item.id === contactId);
+  const index = allContacts.findIndex((item) => item.id === id);
   if (index === -1) {
-    return null
+    return null;
   }
-  allContacts[index] = {contactId, name, email, phone};
-  await fs.writeFile(contactsPath, JSON.stringify(allContacts));  
+  allContacts[index] = { id, name, email, phone };
+  await fs.writeFile(contactsPath, JSON.stringify(allContacts));
   return allContacts[index];
 }
 
