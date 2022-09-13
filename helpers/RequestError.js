@@ -1,6 +1,6 @@
 const RequestError = (status, message) => {
-  const error = new Error("Not found");
-  error.status = 404;
+  const error = new Error(message);
+  error.status = status;
   throw error;
 };
 
