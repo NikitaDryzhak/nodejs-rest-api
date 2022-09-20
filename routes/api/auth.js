@@ -18,6 +18,15 @@ router.post(
   ctrlWrapper(ctrl.login)
 );
 
+router.post(
+  "/users/verify",
+  validationBody(schemas.verifyEmailSchema),
+  ctrlWrapper(ctrl.resendVerifyEmail)
+);
+
+router.get("/users/verify/:verificationToken", ctrlWrapper(ctrl.verifyEmail));
+
+
 router.get("/current", authenticate, ctrlWrapper(ctrl.getCurrent));
 
 router.patch(
