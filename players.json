@@ -1,0 +1,68 @@
+[
+    {
+        "id": "1",
+      "name": "BODYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/c3PGPRZ/bodya.png"
+    },
+    {
+        "id": "2",
+      "name": "TARASYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/yd9VTs7/taras.png"
+    },
+    {
+        "id": "3",
+      "name": "NIKITYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/Z1Mrf60/nik.png"
+    },
+    {
+        "id": "4",
+      "name": "MIKHYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/y56GnY7/mike.png"
+    },
+    {
+        "id": "5",
+      "name": "EURENYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/JvVFCM6/did.png"
+    },
+    {
+        "id": "6",
+      "name": "IVANYAO",
+      "games": "0",
+      "wins": "0",
+      "loses": "0",
+      "goalsScored": "0",
+      "goalsMissed": "0",
+      "goalsPerGame": "0",
+      "photo": "https://i.ibb.co/xMbjdx2/vania.png"
+    }
+  ]
